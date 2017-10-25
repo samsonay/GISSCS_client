@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html ng-app="appGISSCS" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Division GI Unit - Security Control Service</title>
+
+    <link href="/libs/css/bootstrap/3.3.7/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="/libs/css/bootstrap/3.3.7/dist/css/bootstrap-theme.css" rel="stylesheet">
+
+    <script src="/libs/js/angularjs/1.6.4/angular.min.js"></script>
+    <script src="js/app.js"></script>
+<style>
+    .tab{
+        border-left: 1px solid #ddd ;
+        border-right: 1px solid #ddd ;
+        border-bottom: 1px solid #ddd;
+        padding: 10px;
+    }
+</style>
+</head>
+<body>
+<div style="height:80px; margin-bottom:20px;">
+Banner
+</div>
+
+    <div style="margin: 0 20px;">
+
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#">System</a></li>
+            <li><a href="#">Entity</a></li>
+            <li><a href="#">Role</a></li>
+            <li><a href="#">Function</a></li>
+        </ul>
+    <!--<div style="border:1px;">-->
+        <div class="tab">
+
+
+        <table class="table table-striped">
+            <tr >
+                <th></th>
+                <th>System ID</th>
+                <th>System Description</th>
+                <th>System Category</th>
+                <th>System Platform</th>
+                <th>System Scope_id</th>
+                <th>System Owner</th>
+                <th>System Contact</th>
+                <th>System Email</th>
+                <th>SCS Status</th>
+            </tr>
+            <tr ng-repeat="_att in scs_system" >
+                <td> <button type="button" class="btn btn-success">Edit</button></td>
+                <td>{{ _att.system_id }}</td>
+                <td>{{ _att.system_description }}</td>
+                <td>{{ _att.system_category }}</td>
+                <td>{{ _att.system_platform }}</td>
+                <td>{{ _att.system_scope_id }}</td>
+                <td>{{ _att.system_owner }}</td>
+                <td>{{ _att.system_contact }}</td>
+                <td>{{ _att.system_email }}</td>
+                <td >{{ _att.scs_status }}</td>
+
+            </tr>
+        </table>
+        <div style="padding:8px;"><button type="button" class="btn btn-warning">Add</button> </div>
+        </div>
+    <!--</div>-->
+    </div>
+
+
+
+</body>
+</html>
