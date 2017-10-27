@@ -1,0 +1,29 @@
+html, body, table {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 14px;
+}
+
+.content-container {
+    border-left: 1px solid #ddd ;
+    border-right: 1px solid #ddd ;
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+}
+
+.table-system { margin: 0; }
+
+.table-system tr th:nth-child(1) { min-width: 60px; }
+.table-system tr th:nth-child(2) { min-width: 120px; }
+.table-system tr th:nth-child(3) { min-width: 350px; }
+.table-system tr th:nth-child(4) { min-width: 140px; }
+.table-system tr th:nth-child(5) { min-width: 120px; text-align: center;  }
+.table-system tr th:nth-child(6) { width: 100%; }
+
+.table-system tr td:nth-child(1) { min-width: 60px; text-align: center; vertical-align: middle; }
+.table-system tr td:nth-child(2) { min-width: 120px; vertical-align: middle; }
+.table-system tr td:nth-child(3) { min-width: 400px; vertical-align: middle; }
+.table-system tr td:nth-child(4) { min-width: 140px; vertical-align: middle; }
+.table-system tr td:nth-child(5) { min-width: 120px; text-align: center; vertical-align: middle; }
+.table-system tr td:nth-child(6) { width: 100%; }

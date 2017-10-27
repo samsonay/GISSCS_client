@@ -1,0 +1,27 @@
+<div style="height:45px;"><button type="button" class="btn btn-warning"><span class="glyphicon glyphicon-plus"></span> Add</button> </div>
+<div style="border:1px solid #ddd; border-top:0;">
+    <table class="table table-striped table-system">
+        <tr >
+            <th></th>
+            <th>System ID</th>
+            <th>Description</th>
+            <th>Owner</th>
+            <th>Status</th>
+            <th></th>
+        </tr>
+        <tr ng-repeat="_att in scs_system" >
+            <td> <button type="button" class="btn btn-success btn-sm">Edit</button></td>
+            <td>{{ _att.system_id }}</td>
+            <td>{{ _att.system_description }}</td>
+            <td>{{ _att.system_owner }}</td>
+            <td><span
+                    class="glyphicon"
+                    style="font-size:24px;"
+                    ng-class="{
+                        'glyphicon-ok-sign text-success':_att.scs_status=='A',
+                        'glyphicon-remove-sign text-danger':_att.scs_status!='A'
+                    }"></td>
+            <td></td>
+        </tr>
+    </table>
+</div>

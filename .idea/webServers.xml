@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="1d6aaa1d-75c5-4d3d-b907-18d531560132" name="mac Sites Folder" url="http://localhost">
+        <fileTransfer port="0" mountedRoot="/Library/WebServer/Documents" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>
